@@ -80,6 +80,7 @@ export default function Home() {
                 placeholder="kg"
               ></TextInput>
             </View>
+            <Text style={styles.autor}>Feito por Dudu Oliveira</Text>
             <TouchableOpacity
               onPress={() => calcularImc(Number(altura), Number(peso))}
               style={styles.botao}
@@ -210,5 +211,11 @@ const styles = StyleSheet.create({
     marginTop: 12,
     textAlign: "center",
     fontSize: 18,
+  },
+
+  autor: {
+    textAlign: "center", // alinhar o texto no centro
+    color: "#e54", // cor do texto 
+    fontSize: 18 // o tamanho da letra
   },
 });
